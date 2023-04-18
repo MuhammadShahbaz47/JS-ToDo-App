@@ -37,7 +37,7 @@
     background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 input{
     flex:1;
@@ -47,7 +47,7 @@ input{
     font-weight:14px;
     background: transparent;
 }
-button{
+.button1{
     border:none;
     outline:none;
     padding: 16px 50px;
@@ -101,4 +101,19 @@ ul li span{
 }
 ul li span:hover{
     background-color: #edeef0;
+}
+.button2{
+    border:none;
+    outline:none;
+    padding: 10px 40px;
+    background: #be3333;
+    color:white;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+.row2{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }

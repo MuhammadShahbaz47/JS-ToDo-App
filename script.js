@@ -26,6 +26,14 @@ function addTask(){
     saveData();
 }
 
+function deleteAll(){
+    const items = document.querySelectorAll('li')
+        items.forEach(el => {
+          el.remove()
+    })
+    saveData();
+}
+
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked")
@@ -42,6 +50,8 @@ listContainer.addEventListener("click", function(e){
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML)
 }
+
+//showTask() function to show saved data on local storage
 
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data")
